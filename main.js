@@ -1,4 +1,6 @@
-let shownotif = document.querySelector('.showNotification');
+let shownotif = document.createElement('div');
+shownotif.className = 'showNotification';
+document.body.appendChild(shownotif);
 
 function success(text) {
 	let notif = document.createElement('div');
