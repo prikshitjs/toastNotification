@@ -6,7 +6,7 @@ function success(text) {
 	let notif = document.createElement('div');
 	notif.classList.add('notif');
 	notif.classList.add('success');
-	notif.innerHTML = `<i class="fa-solid fa-circle-check"></i> ${text}`;
+	notif.innerHTML = `<span>&#10004;</span> ${text}`;
 	shownotif.appendChild(notif);
 	setTimeout(()=>{
 		notif.remove();
@@ -16,7 +16,7 @@ function error(text) {
 	let notif = document.createElement('div');
 	notif.classList.add('notif');
 	notif.classList.add('alert');
-	notif.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> ${text}`;
+	notif.innerHTML = `<span>&#x26A0;</span> ${text}`;
 	shownotif.appendChild(notif);
 	setTimeout(()=>{
 		notif.remove();
@@ -26,7 +26,7 @@ function invalid(text) {
 	let notif = document.createElement('div');
 	notif.classList.add('notif');
 	notif.classList.add('invalid');
-	notif.innerHTML = `<i class="fa-solid fa-circle-xmark"></i> ${text}`;
+	notif.innerHTML = `<span>&#x26CC;</span> ${text}`;
 	shownotif.appendChild(notif);
 	setTimeout(()=>{
 		notif.remove();
